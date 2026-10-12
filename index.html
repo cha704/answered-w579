@@ -31,7 +31,7 @@
   --body: "Gowun Batang", "Nanum Myeongjo", "Noto Serif KR", "AppleMyungjo", serif;
   color-scheme: only light;
   /* stage size: fits width, and on short phone screens shrinks so the buttons stay above the fold */
-  --chrome-h: 308px;
+  --chrome-h: 342px;
 }
 html, body { height: 100%; margin: 0; }
 html { background: #fdfcf9; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
@@ -225,6 +225,9 @@ button[disabled] { opacity: .5; cursor: default; }
 .steps p.note { font-size: 12.5px; line-height: 1.5; margin-top: 1px; }
 .sheet .close { margin-top: 12px; padding: 9px 18px; }
 .scroll-back { padding-inline: 10px; }
+.imprint { margin: auto 0 0; padding-top: 4px; font-size: 11px; letter-spacing: .04em; color: var(--ink-soft); opacity: .75; text-align: center; }
+.sheet .intro { margin: 0 0 10px; padding-bottom: 0; border-bottom: 0; text-wrap: balance; }
+.sheet h2 { margin: 0 0 14px; padding: 8px 0 9px; border-top: 1px solid rgba(58,42,24,.22); border-bottom: 1px solid rgba(58,42,24,.22); }
 </style>
 
 </head>
@@ -290,14 +293,15 @@ button[disabled] { opacity: .5; cursor: default; }
     </svg>
     </button>
   </footer>
+  <p class="imprint">© 펜슬프리즘 · 도서출판 연필</p>
 </main>
 
 <div class="scroll-back" id="scrollBack" hidden>
   <div class="scroll" role="dialog" aria-modal="true" aria-labelledby="howtoTitle">
     <div class="rod" aria-hidden="true"></div>
     <div class="sheet">
+      <p class="intro">사용법을 누른 당신!<br>역시 정도를 걷는 사람답다. 그대에게 박수를!</p>
       <h2 id="howtoTitle"><span class="t1">「너희들은 답변됐다」</span> <span class="t2">사용설명서</span></h2>
-      <p class="intro">사용법을 누른 당신!<br>역시 정도를 걷는 사람답다.</p>
       <ol class="steps">
         <li><span class="n">1</span><p>질문 하나를 마음 깊이 떠올린다.</p></li>
         <li><span class="n">2</span><p>정말 이 천칭에게 답을 듣고 싶은지 다시 생각해 본다.</p>
