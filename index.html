@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="only light">
 <meta name="theme-color" content="#fdfcf9">
-<meta name="description" content="고민 하나를 떠올리고 누르면, 『너희들은 변호됐다』 속 한 문장이 답해 드립니다.">
+<meta name="description" content="질문 하나를 떠올리고 누르면, 『너희들은 변호됐다』 속 한 문장이 답해 드립니다.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="너희들은 답변됐다">
-<meta property="og:description" content="고민 하나를 떠올리고 누르면, 『너희들은 변호됐다』 속 한 문장이 답해 드립니다.">
+<meta property="og:description" content="질문 하나를 떠올리고 누르면, 『너희들은 변호됐다』 속 한 문장이 답해 드립니다.">
 <meta property="og:image" content="https://cha704.github.io/answered-w579/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -214,7 +214,9 @@ button[disabled] { opacity: .5; cursor: default; }
 /* compact how-to so it fits one phone screen; scrolls inside the scroll if it ever doesn't */
 .scroll { max-height: calc(100vh - 32px); max-height: calc(100svh - 32px); }
 .sheet { margin: -4px 8px; padding: 18px 16px 16px; }
-.sheet h2 { font-size: 20px; }
+.sheet h2 { font-size: 20px; line-height: 1.3; }
+.sheet h2 .t1 { display: block; white-space: nowrap; margin-inline: -.3em; }
+.sheet h2 .t2 { display: block; font-size: 15px; letter-spacing: .32em; margin-top: 2px; text-indent: .32em; }
 .sheet .intro { margin: 2px 0 12px; padding-bottom: 10px; font-size: 12.5px; line-height: 1.55; }
 .steps { gap: 9px; }
 .steps li { grid-template-columns: 1.5em 1fr; gap: 0 6px; }
@@ -248,7 +250,7 @@ button[disabled] { opacity: .5; cursor: default; }
     <p class="src" id="source"></p>
   </article>
 
-  <p class="hint" id="hint">고민 하나를 마음 깊이 떠올린 다음 눌러 주세요.</p>
+  <p class="hint" id="hint">질문 하나를 마음 깊이 떠올린 다음 눌러 주세요.</p>
   <div class="actions">
     <button class="primary" id="ask" type="button">답변 듣기</button>
     <button class="secondary" id="copy" type="button" hidden>문구 복사</button>
@@ -294,7 +296,7 @@ button[disabled] { opacity: .5; cursor: default; }
   <div class="scroll" role="dialog" aria-modal="true" aria-labelledby="howtoTitle">
     <div class="rod" aria-hidden="true"></div>
     <div class="sheet">
-      <h2 id="howtoTitle">답변 듣는 법</h2>
+      <h2 id="howtoTitle"><span class="t1">「너희들은 답변됐다」</span> <span class="t2">사용설명서</span></h2>
       <p class="intro">사용법을 누른 당신!<br>역시 정도를 걷는 사람답다.</p>
       <ol class="steps">
         <li><span class="n">1</span><p>질문 하나를 마음 깊이 떠올린다.</p></li>
@@ -302,7 +304,7 @@ button[disabled] { opacity: .5; cursor: default; }
           <p class="note">변호사님이 걸릴지, 단순 무식한 놈이 걸릴지 아무도 모른다. 동문서답이나 질문에 질문으로 답할 때도 있다.</p></li>
         <li><span class="n">3</span><p>각오가 섰다면, ‘답변 듣기’를 누른다.</p></li>
         <li><span class="n">4</span><p>답변을 듣고 활짝 웃는다.</p>
-          <p class="note">영 엉뚱한 답을 받았다면 소제목이라도 얻는다.</p></li>
+          <p class="note">영 엉뚱한 답을 받았다면 소제목을 보고 웃는다.</p></li>
         <li><span class="n">5</span><p>좋은 답은 ‘문구 복사’를 눌러 간직한다.</p>
           <p class="note">※ 모든 답변은 『너희들은 변호됐다』 본문에서 왔다.<br>이 답변은 법적 효력이 없으며, 항소는 받지 않는다.</p></li>
       </ol>
