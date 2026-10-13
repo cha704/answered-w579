@@ -228,6 +228,10 @@ button[disabled] { opacity: .5; cursor: default; }
 .imprint { margin: auto 0 0; padding-top: 4px; font-size: 11px; letter-spacing: .04em; color: var(--ink-soft); opacity: .75; text-align: center; }
 .sheet .intro { margin: 0 0 10px; padding-bottom: 0; border-bottom: 0; text-wrap: balance; }
 .sheet h2 { margin: 0 0 14px; padding: 8px 0 9px; border-top: 1px solid rgba(58,42,24,.22); border-bottom: 1px solid rgba(58,42,24,.22); }
+.steps p.note.ref { padding-left: 1.15em; text-indent: -1.15em; }
+.steps { gap: 7px; }
+.sheet .close { margin-top: 9px; }
+.sheet { padding-top: 15px; padding-bottom: 13px; }
 </style>
 
 </head>
@@ -310,7 +314,8 @@ button[disabled] { opacity: .5; cursor: default; }
         <li><span class="n">4</span><p>답변을 듣고 활짝 웃는다.</p>
           <p class="note">영 엉뚱한 답을 받았다면 소제목을 보고 웃는다.</p></li>
         <li><span class="n">5</span><p>좋은 답은 ‘문구 복사’를 눌러 간직한다.</p>
-          <p class="note">※ 모든 답변은 『너희들은 변호됐다』 본문에서 왔다.<br>이 답변은 법적 효력이 없으며, 항소는 받지 않는다. 대신 천칭은 일사부재리의 원칙을 따르지 않는다. 같은 질문을 다시 해도 천칭은 처음 듣는 척 성실히 답할 것이다. 불복은 ‘답변 듣기’를 한 번 더 누르는 것으로 갈음한다.</p></li>
+          <p class="note ref">※ 답변은 법적 효력이 없으며, 항소는 받지 않는다. 대신 천칭은 일사부재리의 원칙을 따르지 않는다. 같은 질문을 다시 해도 천칭은 처음 듣는 척 성실히 답할 것이다. 불복은 ‘답변 듣기’를 한 번 더 누르는 것으로 갈음한다.</p>
+          <p class="note ref">※ 모든 답변은 백산 장편소설 『너희들은 변호됐다』 본문에서 모셔왔다.</p></li>
       </ol>
       <button class="close" id="howtoClose" type="button">알겠다</button>
     </div>
